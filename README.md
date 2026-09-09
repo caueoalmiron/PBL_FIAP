@@ -116,7 +116,7 @@ pip install pandas numpy scipy sympy plotly streamlit openpyxl
 ### Executar a Aplicação
 
 ```bash
-streamlit run app_transporte.py
+streamlit run Home.py
 ```
 
 ---
