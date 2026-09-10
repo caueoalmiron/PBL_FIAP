@@ -38,7 +38,14 @@ A solução realiza o tratamento, análise e visualização de dados relacionado
 ```text
 PBL_Fase_05/
 │
-├── app_transporte.py
+├── home.py
+├── pages
+  └── 1 - Limpeza e Qualidade dos Dados.py
+  └── 2 - Estatística Descritiva.py
+  └── 3 - Amostragem.py
+  └── 4 - Correlação.py
+  └── 5 - Testes de Hipótese.py
+  └── 6 - Limites, Derivadas e Integrais.py
 ├── cidade_alfa_transporte_publico.xlsx
 ├── pbl_fase_5_08092026.ipynb
 └── README.md
@@ -48,7 +55,8 @@ PBL_Fase_05/
 
 | Arquivo | Descrição |
 |----------|------------|
-| `app_transporte.py` | Aplicação principal desenvolvida em Streamlit |
+| `Home.py` | Aplicação principal desenvolvida em Streamlit |
+| `pages` | Páginas do projeto em Streamlit |
 | `cidade_alfa_transporte_publico.xlsx` | Base de dados utilizada nas análises |
 | `pbl_fase_5_08092026.ipynb` | Notebook contendo toda a análise exploratória e estatística |
 
