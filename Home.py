@@ -69,8 +69,8 @@ st.markdown(
     """
     ### Volume e Qualidade da Amostra Coletada
 
-    **Dimensão da base**: A base conta com **5.069 registros e 18 variáveis**, constituindo uma massa de dados significativa para a investigação da eficiência do transporte público da Cidade Alfa.\n
-    **Integridade estrutural**: Não foram identificados registros duplicados considerando a combinação ***id_veiculo + data_viagem***, indicando consistência nessa dimensão de identificação dos registros. A taxa inicial de valores ausentes é de aproximadamente **1,3%**, representando um volume reduzido de dados a ser tratado durante a etapa de preparação e limpeza.
+    * **Dimensão da base**: A base conta com **5.069 registros e 18 variáveis**, constituindo uma massa de dados significativa para a investigação da eficiência do transporte público da Cidade Alfa.\n
+    * **Integridade estrutural**: Não foram identificados registros duplicados considerando a combinação ***id_veiculo + data_viagem***, indicando consistência nessa dimensão de identificação dos registros. A taxa inicial de valores ausentes é de aproximadamente **1,3%**, representando um volume reduzido de dados a ser tratado durante a etapa de preparação e limpeza.
     """
 )
 
@@ -78,8 +78,8 @@ st.markdown(
     """
     ### Composição da Frota (Distribuição por Tipo de Veículo)
 
-    **Predomínio dos ônibus autônomos**: Os ônibus autônomos representam **54,5% das operações**, seguidos pelos convencionais (29%), micro-ônibus (11,5%) e vans compartilhadas (5,03%).\n
-    **Potencial analítico**: A predominância dos ônibus autônomos possibilita uma comparação com os veículos convencionais, permitindo investigar diferenças relacionadas à **eficiência operacional, tempo de viagem, atrasos e indicadores de risco.**
+    * **Predomínio dos ônibus autônomos**: Os ônibus autônomos representam **54,5% das operações**, seguidos pelos convencionais (29%), micro-ônibus (11,5%) e vans compartilhadas (5,03%).\n
+    * **Potencial analítico**: A predominância dos ônibus autônomos possibilita uma comparação com os veículos convencionais, permitindo investigar diferenças relacionadas à **eficiência operacional, tempo de viagem, atrasos e indicadores de risco.**
     """
 )
 
@@ -87,8 +87,8 @@ st.markdown(
     """
     ### Distribuição Geográfica dos Registros
 
-    **Cobertura das regiões**: As cinco regiões da Cidade Alfa apresentam uma distribuição relativamente equilibrada dos registros, com aproximadamente **900 a 1.150 observações por região**, permitindo análises comparativas entre diferentes áreas.\n
-    **Pontos de atenção**: As regiões Norte e Leste apresentam maior concentração de registros. Essa diferença deverá ser considerada nas análises estatísticas posteriores, sem assumir previamente que ela representa maior demanda ou maior densidade de sensores.
+    * **Cobertura das regiões**: As cinco regiões da Cidade Alfa apresentam uma distribuição relativamente equilibrada dos registros, com aproximadamente **900 a 1.150 observações por região**, permitindo análises comparativas entre diferentes áreas.\n
+    * **Pontos de atenção**: As regiões Norte e Leste apresentam maior concentração de registros. Essa diferença deverá ser considerada nas análises estatísticas posteriores, sem assumir previamente que ela representa maior demanda ou maior densidade de sensores.
     """
 )
 
@@ -96,7 +96,7 @@ st.markdown(
     """
     ### Variáveis Operacionais e Ambientais
 
-    **Multidimensionalidade**: Além das informações relacionadas ao transporte, a base apresenta variáveis operacionais e ambientais, como ***status_operacional, indice_risco_falha, idade_frota_anos, temperatura_c e chuva_mm.***\n
-    **Potencial para investigação estatística**: A diversidade de variáveis permite investigar associações entre características da frota, condições operacionais e fatores climáticos com indicadores como **tempo de viagem, atrasos e risco de falha**, utilizando posteriormente técnicas de estatística descritiva, correlação e testes de hipóteses.
+    * **Multidimensionalidade**: Além das informações relacionadas ao transporte, a base apresenta variáveis operacionais e ambientais, como ***status_operacional, indice_risco_falha, idade_frota_anos, temperatura_c e chuva_mm.***\n
+    * **Potencial para investigação estatística**: A diversidade de variáveis permite investigar associações entre características da frota, condições operacionais e fatores climáticos com indicadores como **tempo de viagem, atrasos e risco de falha**, utilizando posteriormente técnicas de estatística descritiva, correlação e testes de hipóteses.
     """
 )

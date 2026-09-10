@@ -110,7 +110,7 @@ A aplicação Streamlit disponibiliza painéis interativos contendo:
 ### Instalar Dependências
 
 ```bash
-pip install pandas numpy scipy sympy plotly streamlit openpyxl
+pip install pandas numpy scipy sympy plotly streamlit openpyxl statsmodels
 ```
 
 ### Executar a Aplicação
