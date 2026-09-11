@@ -1,0 +1,15 @@
+streamlit
+pandas
+numpy
+plotly
+openpyxl
+requests
+folium
+streamlit-folium
+redis
+python-dotenv
+scikit-learn
+scipy
+matplotlib
+seaborn
+Pillow
