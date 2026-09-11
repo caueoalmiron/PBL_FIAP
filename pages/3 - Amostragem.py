@@ -32,3 +32,23 @@ fig.update_layout(barmode="group", title="Comparação de proporções por tipo 
 st.plotly_chart(fig, use_container_width=True)
 
 st.caption("A amostra estratificada mantém as proporções da base original — validação da técnica.")
+
+st.header("Análise:")
+
+"""
+### Fidelidade da Amostragem Estratificada
+
+* **Proporções praticamente idênticas à base completa:** Com fração de 10%, a amostra estratificada (507 registros) reproduz as proporções originais por tipo de veículo com desvio inferior a 0,1 ponto percentual em três dos quatro grupos — Ônibus Autônomo (54,53% x 54,44%), Ônibus Convencional (28,96% x 28,99%) e Micro-Ônibus (11,48% x 11,44%). A Van Compartilhada, grupo minoritário (5,03% da base), apresenta o maior desvio relativo (5,13% na amostra), o que é esperado em estratos menores, onde a variabilidade amostral tende a ser proporcionalmente maior.
+
+* **Validação da técnica:** Essa fidelidade confirma que a amostragem estratificada é adequada para preservar a representatividade da frota nas análises subsequentes, especialmente relevante dado que os tipos de veículo apresentam comportamentos distintos de tempo de viagem e atraso, como já observado na estatística descritiva.
+
+---
+
+### Amostragem Aleatória Simples x Estratificada: Sensibilidade a Outliers
+
+* **Diferença nas médias amostrais:** A média de `tempo_viagem_min` na base completa é de **26,35 min**. Uma amostra aleatória simples de 500 registros produz média de **25,32 min**, enquanto a amostra estratificada de tamanho semelhante (507 registros) produz **25,78 min** — ambas abaixo da média populacional, mas a estratificada fica mais próxima.
+
+* **Por que isso acontece:** Como `tempo_viagem_min` tem distribuição fortemente assimétrica (poucas viagens anômalas com mais de 300 minutos puxando a média para cima), a amostragem aleatória simples corre maior risco de sub ou sobrerrepresentar essas observações raras por puro acaso. A estratificação por tipo de veículo reduz parcialmente esse risco ao garantir que cada grupo — inclusive o Ônibus Convencional, que concentra os tempos mais extremos — seja amostrado proporcionalmente à sua presença na base.
+
+**Síntese da análise:** A amostragem estratificada por `tipo_veiculo` se mostrou mais robusta que a aleatória simples para preservar tanto a composição da frota quanto a média de `tempo_viagem_min`, principalmente por lidar melhor com a assimetria gerada pelos outliers já identificados na etapa de limpeza. Essa robustez é importante para garantir que testes estatísticos futuros (correlação, testes de hipótese) sejam conduzidos sobre subconjuntos representativos da base real.
+"""
